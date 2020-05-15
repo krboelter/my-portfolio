@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const Nav = styled.div`
     height: 75px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 5px;
@@ -13,10 +14,19 @@ const H1 = styled.h1`
     text-shadow: 2px 2px 4px #00ff00;
 `
 const Ul = styled.ul`
-    width: 33%;
     display: flex;
-    justify-content: space-around;
+    justify-content: spaced-evenly;
     align-items: center;
+`
+
+const Li = styled.li`
+    padding: 1.5rem 3rem;
+    transition: 350ms;
+
+    &:hover{
+        box-shadow: 0 4px 6px black;
+        cursor: pointer;
+    }
 `
 
 const A = styled.a`
@@ -25,6 +35,7 @@ const A = styled.a`
     font-weight: bold;
     color: #00ff00;
     text-shadow: 2px 2px 4px black;
+    text-decoration: none;
 `
 
 export default function Navigation() {
@@ -32,9 +43,9 @@ export default function Navigation() {
         <Nav>
             <H1>Ken Boelter</H1>
             <Ul>
-                <li><A>PROJECTS</A></li>
-                <li><A>ABOUT</A></li>
-                <li><A>RESUME</A></li>
+                <Li><A href="#">PROJECTS</A></Li>
+                <Li><A href="#">ABOUT</A></Li>
+                <Li><A href="#">RESUME</A></Li>
             </Ul>
         </Nav>
     )
