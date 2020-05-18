@@ -20,7 +20,7 @@ const Ul = styled.ul`
 `
 
 const Li = styled.li`
-    padding: 1.5rem 3rem;
+    padding: 1rem 2rem;
     transition: 350ms;
 
     &:hover{
@@ -30,11 +30,11 @@ const Li = styled.li`
 `
 
 const A = styled.a`
-    font-family: 'Special Elite', cursive;
-    font-size: 22px;
+    font-family: 'Sentury Gothic', san-serif;
+    font-size: 14px;
     font-weight: bold;
-    color: #00ff00;
-    text-shadow: 2px 2px 4px black;
+    color: black;
+    text-shadow: 1px 1px 3px #00ff00;
     text-decoration: none;
 `
 
