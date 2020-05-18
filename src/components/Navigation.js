@@ -6,11 +6,12 @@ const Nav = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 5px;
 `
 const H1 = styled.h1`
     font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
+    font-size: 30px;
     text-shadow: 2px 2px 4px #00ff00;
 `
 const Ul = styled.ul`
