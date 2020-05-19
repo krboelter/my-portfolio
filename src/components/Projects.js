@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export default function Projects() {
     const [projects, setProjects] = useState([])
-    useEffect(() => {
+    {/* useEffect(() => {
         axios.get('https://api.github.com/users/krboelter')
             .then(res => {
                 // console.log(res)
@@ -20,7 +20,7 @@ export default function Projects() {
             .catch(err => {
                 console.log(err)
             })
-    }, [])
+    }, []) */}
 
     return (
         <div>

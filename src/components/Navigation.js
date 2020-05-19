@@ -2,30 +2,36 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Nav = styled.div`
-    height: 75px;
+    height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px;
+    background-color: black;
+    opacity: 0.7;
+    box-shadow: 0 0 8px #00ff00;
+    position: fixed;
 `
 const H1 = styled.h1`
+    margin: 0 30px;
     font-family: 'Permanent Marker', cursive;
     font-size: 30px;
+    color: lightgray;
     text-shadow: 2px 2px 4px #00ff00;
 `
 const Ul = styled.ul`
+    margin: 0 30px;
     display: flex;
     justify-content: spaced-evenly;
     align-items: center;
 `
 
 const Li = styled.li`
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     transition: 350ms;
 
     &:hover{
-        box-shadow: 0 4px 6px black;
+        box-shadow: 0 4px 6px #00ff00;
         cursor: pointer;
     }
 `
@@ -34,7 +40,7 @@ const A = styled.a`
     font-family: 'Sentury Gothic', san-serif;
     font-size: 14px;
     font-weight: bold;
-    color: black;
+    color: lightgray;
     text-shadow: 1px 1px 3px #00ff00;
     text-decoration: none;
 `
