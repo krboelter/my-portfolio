@@ -28,10 +28,11 @@ const Nav = styled.div`
 `
 const H3 = styled.h3`
     margin: 0 30px;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
-    color: lightgray;
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+    color: white;
     text-shadow: 2px 2px 4px #00ff00;
+    text-decoration: underline;
     position: fixed;
 `
 const Ul = styled.ul`
@@ -44,7 +45,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
     padding: 0.8rem 2rem;
-    transition: 350ms;
+    transition: 400ms;
 
     &:hover{
         box-shadow: 0 4px 6px #00ff00;
@@ -53,7 +54,7 @@ const Li = styled.li`
 `
 
 const A = styled.a`
-    font-family: 'Sentury Gothic', san-serif;
+    font-family: 'Noto Sans', san-serif;
     font-size: 14px;
     font-weight: bold;
     color: lightgray;
