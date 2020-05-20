@@ -2,7 +2,21 @@ import React from 'react';
 import styled from 'styled-components'
 
 import Nav from './components/Navigation'
+import About from './components/About'
 import Projects from './components/Projects'
+
+function App() {
+    return (
+        <Main className="App">
+            <Nav />
+            <Content>
+                <About />
+            </Content>
+        </Main>
+    );
+}
+
+export default App;
 
 const Main = styled.div`
     text-align: center;
@@ -10,14 +24,6 @@ const Main = styled.div`
     margin: 0 auto;
 `
 
-
-function App() {
-    return (
-        <Main className="App">
-            <Nav />
-            <Projects />
-        </Main>
-    );
-}
-
-export default App;
+const Content = styled.div`
+    margin-top: 100px;
+`
