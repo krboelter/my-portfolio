@@ -56,7 +56,9 @@ table {
  ************/
 body {
     width: 100%;
-    background-image: url("./images/matrix-cyber-security.jpg")
+    background-image: url("./images/matrix-cyber-security.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 /************

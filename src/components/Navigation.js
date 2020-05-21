@@ -24,7 +24,8 @@ const Nav = styled.div`
     background-color: black;
     opacity: 0.7;
     box-shadow: 0 0 8px #00ff00;
-    position: relative;
+    position: fixed;
+	top: 0;
 `
 const H3 = styled.h3`
     margin: 0 30px;
