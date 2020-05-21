@@ -9,11 +9,11 @@ export default function About() {
             <Content>
                 <Portrate src={picture}/>
                 <DesContainer>
-                    <H1>KEN BOELTER</H1>
-		            <Description>I started in construction, but switched to programming and haven't looked back. I always have a few projects in the works and enjoy
+                    <H3>KEN BOELTER</H3>
+		    <Description>I started in construction, but switched to programming and haven't looked back. I always have a few projects in the works and enjoy
 			            learning new languages and frameworks.
-		            </Description>
-		        </DesContainer>
+		    </Description>
+		</DesContainer>
             </Content>
         </Container>
     )
@@ -30,20 +30,20 @@ const Container = styled.div`
 `
 
 const H2 = styled.h2`
-    color: darkgray;
-    font-family: "Noto Sans", sans-serif;
+    color: white;
+    font-family: 'Special Elite', cursive;
     font-size: 35px;
     font-weight: bold;
-    text-shadow: 1px 1px 2px gray;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px #00ff00;
     margin-bottom: 35px;
-    margin-top: 16px;
+    margin-top: 40px;
 `
 
 const Content = styled.div`
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 2.5rem 10%;
+    margin: 0 10%;
 `
 
 const Portrate = styled.img`
@@ -57,17 +57,17 @@ const DesContainer = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-left: 35px;
 `
 
-const H1 = styled.h1`
-    color: white;
+const H3 = styled.h3`
+    color: #00cc18;
     width: 100%;
-    font-family: 'Special Elite', cursive;
-    font-size: 45px;
-    text-shadow: 2px 2px 4px #00ff00;
-    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 35px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px darkgray;
     text-align: left;
 `
 
@@ -75,6 +75,8 @@ const Description = styled.p`
     color: lightgray;
     width: 100%;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
     text-align: left;
+    margin-top: 30px;
 `
 
