@@ -24,6 +24,7 @@ function App() {
 export default App;
 
 const Main = styled.div`
+	width: 100%;
     text-align: center;
     height: 100vh;
     margin: 0 auto;
@@ -34,12 +35,14 @@ const Content = styled.div`
 	display: block;
 `
 
-const Right = styled.div`
-	display: block;
-	float: right;
-`
-
 const Left = styled.div`
 	display: block;
+	width: 100%;
 	float: left;
+`
+
+const Right = styled.div`
+	display: block;
+	width: 100%;
+	float: right;
 `

@@ -5,28 +5,36 @@ import picture from '../images/Me_and_Dee.jpg'
 export default function About() {
     return (
         <Container>
-            <H2>ABOUT ME</H2>
-            <Content>
-                <Portrate src={picture}/>
-                <DesContainer>
-                    <H3>KEN BOELTER</H3>
-		    <Description>I started in construction, but switched to programming and haven't looked back. I always have a few projects in the works and enjoy
+			<FlexContainer>
+            	<H2>ABOUT ME</H2>
+            	<Content>
+                	<Portrate src={picture}/>
+                	<DesContainer>
+                    	<H3>KEN BOELTER</H3>
+		    			<Description>I started in construction, but switched to programming and haven't looked back. I always have a few projects in the works and enjoy
 			            learning new languages and frameworks.
-		    </Description>
-		</DesContainer>
-            </Content>
+		    			</Description>
+					</DesContainer>
+            	</Content>
+			</FlexContainer>
         </Container>
     )
 }
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-left: 6rem;
-    width: 50%;
+	display: block;
+	float; left;
+    width: 950px;
     height: 500px;
+	margin-left: 10rem;
     border-radius: 5px;
     background-image: linear-gradient(to right, black, 85%, rgba(0, 0, 0, 0));
+`
+
+const FlexContainer = styled.div`
+	display: flex;
+    flex-direction: column;
+
 `
 
 const H2 = styled.h2`

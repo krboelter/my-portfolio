@@ -4,23 +4,30 @@ import styled from 'styled-components'
 export default function Projects() {
     return (
         <Container>
-            <H2>PROJECTS</H2>
-            <Content>
-				Hello World
-            </Content>
+			<FlexContainer>
+            	<H2>PROJECTS</H2>
+            	<Content>
+					Hello World
+            	</Content>
+			</FlexContainer>
         </Container>
     )
 }
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
+	display: block;
+	float: right;
     margin-top: 6rem;
-	margin-right: 6rem;
-    width: 50%;
+	margin-right: 10rem;
+    width: 950px;
     height: 500px;
     border-radius: 5px;
     background-image: linear-gradient(to left, black, 85%, rgba(0, 0, 0, 0));
+`
+
+const FlexContainer = styled.div`
+	display: flex;
+    flex-direction: column;
 `
 
 const H2 = styled.h2`
