@@ -1,32 +1,49 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
+import styled from 'styled-components'
 
 export default function Projects() {
-    const [projects, setProjects] = useState([])
-    {/* useEffect(() => {
-        axios.get('https://api.github.com/users/krboelter')
-            .then(res => {
-                // console.log(res)
-                const repos = res.data.repos_url
-                axios.get(repos)
-                    .then(res => {
-                        console.log(res, 'repositories')
-                        setProjects(res.data)
-                    })
-                    .catch(err => {
-                        console.log(err)
-                    })
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    }, []) */}
-
     return (
-        <div>
-            {/* {projects.map((project, index) => (
-                <div key={index}>{project}</div>
-            ))} */}
-        </div>
+        <Container>
+			<FlexContainer>
+            	<H2>PROJECTS</H2>
+            	<Content>
+					Hello World
+            	</Content>
+			</FlexContainer>
+        </Container>
     )
 }
+
+const Container = styled.div`
+	display: block;
+	float: right;
+    margin-top: 6rem;
+	margin-right: 10rem;
+    width: 950px;
+    height: 500px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, black, 85%, rgba(0, 0, 0, 0));
+`
+
+const FlexContainer = styled.div`
+	display: flex;
+    flex-direction: column;
+`
+
+const H2 = styled.h2`
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px #00ff00;
+    margin-bottom: 35px;
+    margin-top: 40px;
+`
+
+const Content = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+`
+
