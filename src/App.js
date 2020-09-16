@@ -8,15 +8,15 @@ import Projects from './components/Projects'
 function App() {
     return (
         <Main className="App">
-            <Nav />
-            <Content>
-				<Left>
-                	<About />
-				</Left>
-				<Right>
-					<Projects />
-				</Right>
-            </Content>
+          <Nav />
+          <Content>
+    				<Left>
+              <About />
+    				</Left>
+    				<Right>
+              <Projects />
+    				</Right>
+          </Content>
         </Main>
     );
 }

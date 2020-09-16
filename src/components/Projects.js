@@ -45,5 +45,6 @@ const Content = styled.div`
     display: flex;
     flex-direction: row;
     margin: 0 10%;
+	color: white;
 `
 
