@@ -4,11 +4,8 @@ import styled from 'styled-components'
 export default function Navigation() {
     return (
         <Nav>
-            margin-top: 100px;
             <H3>Ken Boelter</H3>
             <Ul>
-                <Li><A href="#">PROJECTS</A></Li>
-                <Li><A href="#">ABOUT</A></Li>
                 <Li><A href="#">RESUME</A></Li>
             </Ul>
         </Nav>
@@ -34,14 +31,10 @@ const H3 = styled.h3`
     color: white;
     text-shadow: 2px 2px 4px #00ff00;
     text-decoration: underline;
-    position: fixed;
 `
 const Ul = styled.ul`
     margin: 0 30px;
-    display: flex;
-    justify-content: spaced-evenly;
     align-items: center;
-    position: relative;
 `
 
 const Li = styled.li`
