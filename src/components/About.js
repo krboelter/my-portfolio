@@ -34,7 +34,6 @@ const Container = styled.div`
 const FlexContainer = styled.div`
 	display: flex;
     flex-direction: column;
-
 `
 
 const H2 = styled.h2`
@@ -87,4 +86,3 @@ const Description = styled.p`
     text-align: left;
     margin-top: 30px;
 `
-
