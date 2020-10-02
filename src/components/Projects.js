@@ -46,10 +46,11 @@ const H2 = styled.h2`
 const Content = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 0 10%;
 	color: white;
 `
 
 const Div = styled.div`
-    width: 100%;
+    box-shadow: 0 0 20px lime;
 `
