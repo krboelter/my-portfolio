@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 export default function Navigation() {
     return (
         <Nav>
             <H3>Ken Boelter</H3>
             <Ul>
-                <Li><A href="#">RESUME</A></Li>
+                <Li><Link to="/about">ABOUT</Link></Li>
+                <Li><Link to="/contact">CONTACT</Link></Li>
+                <Li><Link to="/resume">RESUME</Link></Li>
             </Ul>
         </Nav>
     )
@@ -35,6 +38,8 @@ const H3 = styled.h3`
 const Ul = styled.ul`
     margin: 0 30px;
     align-items: center;
+    display: flex;
+    display-flex: space-between;
 `
 
 const Li = styled.li`
@@ -45,13 +50,4 @@ const Li = styled.li`
         box-shadow: 0 4px 6px #00ff00;
         cursor: pointer;
     }
-`
-
-const A = styled.a`
-    font-family: 'Noto Sans', san-serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: lightgray;
-    text-shadow: 1px 1px 3px #00ff00;
-    text-decoration: none;
 `

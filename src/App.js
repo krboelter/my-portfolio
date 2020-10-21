@@ -1,26 +1,23 @@
 import React from 'react';
 import styled from 'styled-components'
+import {Route} from 'react-router-dom'
 
 import Nav from './components/Navigation'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Resume from './components/Resume'
 
 function App() {
     return (
         <Main className="App">
           <Nav />
-          <Content>
-    			<Left>
-                    <About />
-    			</Left>
-    			<Right>
-                    <Projects />
-    			</Right>
-                <Left>
-                    <Contact />
-                </Left>
-          </Content>
+          <Buffer />
+
+          <Route exact path='/' component={About} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/resume' component={Resume} />
         </Main>
     );
 }
@@ -34,19 +31,6 @@ const Main = styled.div`
     margin: 0 auto;
 `
 
-const Content = styled.div`
-    margin-top: 100px;
-	display: block;
-`
-
-const Left = styled.div`
-	display: block;
-	width: 100%;
-	float: left;
-`
-
-const Right = styled.div`
-	display: block;
-	width: 100%;
-	float: right;
+const Buffer = styled.div`
+    height: 65px;
 `

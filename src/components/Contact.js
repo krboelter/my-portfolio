@@ -6,7 +6,6 @@ export default function Contact() {
         <Container>
             <H2>CONTACT</H2>
             <Div>Email: <Email href="mailto:krboelter@gmail.com? subject=Job Opportunity">krboelter@gmail.com</Email></Div>
-            <a>hello</a>
         </Container>
     )
 }
