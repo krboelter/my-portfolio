@@ -8,6 +8,7 @@ export default function Navigation() {
             <H3>Ken Boelter</H3>
             <Ul>
                 <Li><Link to="/about">ABOUT</Link></Li>
+                <Li><Link to="/projects">PROJECTS</Link></Li>
                 <Li><Link to="/contact">CONTACT</Link></Li>
                 <Li><Link to="/resume">RESUME</Link></Li>
             </Ul>
@@ -32,7 +33,7 @@ const H3 = styled.h3`
     font-family: 'Special Elite', cursive;
     font-size: 25px;
     color: white;
-    text-shadow: 2px 2px 4px #00ff00;
+    text-shadow: 2px 2px 4px darkgray;
     text-decoration: underline;
 `
 const Ul = styled.ul`

@@ -5,10 +5,10 @@ export default function Projects() {
     return (
         <Container>
 			<FlexContainer>
-            	<H2>PROJECTS</H2>
+            	<h2>PROJECTS</h2>
             	<Content>
                     <Div>
-					    <iframe src="https://www.savethisjob.com/" title="Save This Job" width="600px" height="350"></iframe>
+					    <iframe src="https://www.savethisjob.com/" title="Save This Job" width="700px" height="500"></iframe>
                     </Div>
             	</Content>
 			</FlexContainer>
@@ -19,28 +19,13 @@ export default function Projects() {
 const Container = styled.div`
 	display: block;
 	float: right;
-    margin-top: 6rem;
-	margin-right: 10rem;
-    width: 950px;
-    height: 500px;
+    width: 100%;
     border-radius: 5px;
-    background-image: linear-gradient(to left, black, 85%, rgba(0, 0, 0, 0));
 `
 
 const FlexContainer = styled.div`
 	display: flex;
     flex-direction: column;
-`
-
-const H2 = styled.h2`
-    color: white;
-    font-family: 'Special Elite', cursive;
-    font-size: 35px;
-    font-weight: bold;
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px #00ff00;
-    margin-bottom: 35px;
-    margin-top: 40px;
 `
 
 const Content = styled.div`
@@ -52,5 +37,6 @@ const Content = styled.div`
 `
 
 const Div = styled.div`
-    box-shadow: 0 0 20px lime;
+    margin-top: 40px;
+    box-shadow: 0 0 16px lime;
 `
