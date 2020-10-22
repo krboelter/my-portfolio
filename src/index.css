@@ -69,8 +69,31 @@ a {
 	color: white;
 	font-size: 20px;
     font-family: 'Special Elite', cursive;
+	text-shadow: 2px 2px 4px darkgray;
+}
+
+h2 {
+	text-align: center;
+    color: lightgray;
+    font-family: 'Special Elite', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px gray;
+    margin-bottom: 35px;
+    margin-top: 60px;
 }
 
 /************
  ***CUSTOM***
  ************/
+
+ #about {
+	 width: 80%;
+	 height: 500px;
+	 z-index: -1;
+	 top: 200px;
+	 background: url("./images/Backdrop.svg");
+	 background-repeat: no-repeat;
+	 position: absolute;
+ }

@@ -14,10 +14,13 @@ function App() {
           <Nav />
           <Buffer />
 
-          <Route exact path='/' component={About} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/contact' component={Contact} />
-          <Route exact path='/resume' component={Resume} />
+          <Page>
+              <Route exact path='/' component={About} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/projects' component={Projects} />
+              <Route exact path='/contact' component={Contact} />
+              <Route exact path='/resume' component={Resume} />
+          </Page>
         </Main>
     );
 }
@@ -33,4 +36,9 @@ const Main = styled.div`
 
 const Buffer = styled.div`
     height: 65px;
+`
+
+const Page = styled.div`
+    width: 60%;
+    margin: 0 auto;
 `
