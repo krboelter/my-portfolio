@@ -7,13 +7,15 @@ export default function About() {
 		<FlexContainer>
             <div id='about'></div>
         	<h2>ABOUT ME</h2>
-            <Portrait src={picture}/>
-        	<DesContainer>
-            	<H3>KEN BOELTER</H3>
-    			<Description>I started in construction, but switched to programming and haven't looked back. I always have a few projects in the works and enjoy
-	            learning new languages and frameworks.
-    			</Description>
-			</DesContainer>
+            <BodySection>
+                <Portrait src={picture}/>
+            	<DesContainer>
+                	<H3>KEN BOELTER</H3>
+        			<Description>I started in construction, but switched to programming and haven't looked back. I always have a few projects in the works and enjoy
+    	            learning new languages and frameworks.
+        			</Description>
+    			</DesContainer>
+            </BodySection>
 		</FlexContainer>
     )
 }
@@ -24,19 +26,26 @@ const FlexContainer = styled.div`
 `
 
 const Portrait = styled.img`
+    align-self: center;
     position: relative;
-    right: 0px;
-    width: 200px;
-    height: 270px;
+    width: 300px;
+    height: 410px;
     border-radius: 50%;
     box-shadow: 0 0 10px black;
 `
 
+const BodySection = styled.div`
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`
+
 const DesContainer = styled.div`
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
+    margin-left: 200px;
 `
 
 const H3 = styled.h3`
