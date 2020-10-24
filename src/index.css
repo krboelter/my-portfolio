@@ -84,6 +84,11 @@ h2 {
     margin-top: 60px;
 }
 
+::placeholder {
+	color: white;
+	opacity: .4;
+}
+
 /************
  ***CUSTOM***
  ************/
