@@ -5,8 +5,6 @@ import {Route} from 'react-router-dom'
 import Nav from './components/Navigation'
 import About from './components/About'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Resume from './components/Resume'
 
 function App() {
     return (
@@ -18,8 +16,6 @@ function App() {
               <Route exact path='/' component={About} />
               <Route exact path='/about' component={About} />
               <Route exact path='/projects' component={Projects} />
-              <Route exact path='/contact' component={Contact} />
-              <Route exact path='/resume' component={Resume} />
           </Page>
         </Main>
     );

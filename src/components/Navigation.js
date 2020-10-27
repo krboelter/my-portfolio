@@ -9,8 +9,6 @@ export default function Navigation() {
             <Ul>
                 <Li><Link to="/about">ABOUT</Link></Li>
                 <Li><Link to="/projects">PROJECTS</Link></Li>
-                <Li><Link to="/contact">CONTACT</Link></Li>
-                <Li><Link to="/resume">RESUME</Link></Li>
             </Ul>
         </Nav>
     )
