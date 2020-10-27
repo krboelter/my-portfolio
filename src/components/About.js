@@ -14,6 +14,11 @@ export default function About() {
         			<Description>I started in construction, but switched to programming and haven't looked back. I always have a few projects in the works and enjoy
     	            learning new languages and frameworks.
         			</Description>
+                    <Description>I enjoy spending time with my family. My wife and I have a baby girl with another one on the way. We currently live in Utah while I
+                         search for a job.
+                    </Description>
+                    <Description>In my free time I like to work on my game development skills using the Godot game engine.
+                    </Description>
     			</DesContainer>
             </BodySection>
 		</FlexContainer>
