@@ -16,8 +16,8 @@ export default function Projects() {
                     <div>
                         <section>See more at Github and LinkedIn</section>
                         <br />
-                        <a href="https://github.com/krboelter" target="_blank"><GitHubIcon /></a>
-                        <a href="https://www.linkedin.com/in/ken-boelter" target="_blank"><LinkedInIcon /></a>
+                        <A href="https://github.com/krboelter" target="_blank"><GitHubIcon /></A>
+                        <A href="https://www.linkedin.com/in/ken-boelter" target="_blank"><LinkedInIcon /></A>
                     </div>
             	</Content>
 			</FlexContainer>
@@ -48,4 +48,8 @@ const Content = styled.div`
 const Div = styled.div`
     margin: 40px auto;
     box-shadow: 0 0 16px lime;
+`
+
+const A = styled.a`
+    margin: 0 5px;
 `
